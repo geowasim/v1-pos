@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Fiore",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "199",
+    "description": "عطر",
+    "vol": "200"
+  },
+  {
+    "id": 2,
+    "title": "Oro",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "199",
+    "description": "عطر",
+    "vol": "200"
+  },
+  {
+    "id": 3,
+    "title": "Stella ",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "199",
+    "description": "عطر",
+    "vol": "200"
+  },
+  {
+    "id": 4,
+    "title": "Viola",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "199",
+    "description": "عطر",
+    "vol": "200"
+  },
+  {
+    "id": 5,
+    "title": "Hair mist",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "68",
+    "description": "عطر خاص للشعر",
+    "vol": ""
+  },
+  {
+    "id": 6,
+    "title": "Odor freshener",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "49",
+    "description": "معطر جو",
+    "vol": "200"
+  },
+  {
+    "id": "b1",
+    "title": "Bag",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "description": "كيس",
+
+    "price": "0"
+  }
+]

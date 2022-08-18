@@ -1,0 +1,68 @@
+.payments {
+  width: inherit;
+  display: flex;
+  align-content: space-around;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 10px;
+}
+.madaItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.change {
+  display: flex;
+  position: absolute;
+  bottom: 102px;
+  right: 0vw;
+  background-color: #1899d6;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.TP {
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+.cacheContainer {
+  margin-top: 80px;
+}
+
+.cachChange {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remain {
+  position: absolute;
+  bottom: 190;
+  right: 35%;
+  width: 150px;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px dotted;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.printFromCach {
+  position: absolute;
+  display: flex;
+  bottom: 150px;
+  right: 25%;
+  width: auto;
+  padding: 0 50px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}

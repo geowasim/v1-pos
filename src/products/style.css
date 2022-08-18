@@ -1,0 +1,33 @@
+img {
+  width: 100px;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-right: 2px solid whitesmoke;
+  border-top: 2px solid whitesmoke;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+.card:hover,
+.card:focus {
+  background-color: #1899d6;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
