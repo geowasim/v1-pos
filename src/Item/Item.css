@@ -1,5 +1,4 @@
 .itemContainer {
-  border-right: 2px solid #cccbcb;
   width: 33vw;
   display: flex;
   justify-content: center;
@@ -9,6 +8,7 @@
   position: fixed;
   top: 5vh;
   color: #fff;
+  width: 32vw;
 }
 
 /* .itemImageBG {

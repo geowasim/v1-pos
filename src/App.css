@@ -62,3 +62,13 @@
 .links li a {
   text-decoration: none;
 }
+
+.chooseItem {
+  width: 33vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Readex Pro", sans-serif;
+}

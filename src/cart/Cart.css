@@ -10,6 +10,7 @@
   right: 5vw;
   width: 33vw;
 }
+
 .basket {
   color: #fff;
   text-align: center;
@@ -22,6 +23,28 @@
   justify-content: flex-start;
   align-items: center;
   height: 80%;
+}
+
+.basket::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+
+  position: absolute;
+  left: 0;
+  top: 26px;
+  background-color: #d9d9d9;
+}
+
+.basket::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+
+  position: absolute;
+  right: 0;
+  top: 26px;
+  background-color: #d9d9d9;
 }
 hr {
   width: 100%;
@@ -51,7 +74,9 @@ hr {
 }
 .basketName {
   margin-bottom: 25px;
-  color: ;
+  margin-top: 15px;
+  color: #4e4d4d;
+  font-family: Readex Pro, sans-serif;
 }
 .basketTitle {
   flex: 1;

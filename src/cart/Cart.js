@@ -14,6 +14,7 @@ const Basket = (props) => {
     onRemove,
     handleData,
     handleReadAmmount,
+    handleIsPrint,
   } = props;
   const [method, setMethod] = useState("Mada");
   const [isCachDone, setIsCachDone] = useState(false);
@@ -153,6 +154,7 @@ const Basket = (props) => {
                     handlePrint();
                     resetCartItems();
                     handleData();
+                    handleIsPrint();
                   }}
                 >
                   الدفع - طباعة

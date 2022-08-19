@@ -38,7 +38,7 @@ const Item = (props) => {
             </button>
           </div>
         ) : (
-          <div>
+          <div className="item">
             <h2> اختر منتج</h2>
           </div>
         )}

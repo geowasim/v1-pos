@@ -25,6 +25,7 @@ function App(props) {
   const [item, setItem] = useState(null);
   const [cartItems, setCartItems] = useState([]);
   const [orderNumber, setOrderNumber] = useState(formatDate(new Date()) + 1000);
+  const [isPrint, setIsPrint] = useState(false);
 
   const [data, setData] = useState(
     JSON.parse(localStorage.getItem("inv_sn")) || [
@@ -105,6 +106,12 @@ function App(props) {
     }
   };
 
+  const handleIsPrint = (v) => {
+    console.log(isPrint);
+    setIsPrint(v);
+    console.log(isPrint);
+  };
+
   return (
     <OrderNumberContext.Provider value={orderNumber}>
       <div className="App">
@@ -112,9 +119,13 @@ function App(props) {
           className="App-header"
           style={{ display: "flex", flexDirection: "column" }}
         >
-          <Products findItem={findItem} />
+          <Products findItem={findItem} handleIsPrint={handleIsPrint} />
         </header>
-        <Item item={item} onAdd={onAdd} />
+        {isPrint ? (
+          <Item item={item} onAdd={onAdd} />
+        ) : (
+          <div className="chooseItem"> اختر منتج</div>
+        )}
         <Basket
           cartItems={cartItems}
           onAdd={onAdd}
@@ -122,6 +133,7 @@ function App(props) {
           resetCartItems={resetCartItems}
           handleData={handleData}
           handleReadAmmount={handleReadAmmount}
+          handleIsPrint={handleIsPrint}
         />
         {/* <Invoice cartItems={cartItems} totalPrice={totalPrice} /> */}
       </div>

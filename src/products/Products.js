@@ -5,7 +5,7 @@ import "./Products.css";
 const Products = (props) => {
   const perfumes = useContext(PerfumeContext);
   const [idPerfume, setIdPerfume] = useState(null);
-
+  const { handleIsPrint } = props;
   useEffect(() => {
     props.findItem(idPerfume);
   }, [idPerfume, props]);
@@ -26,7 +26,10 @@ const Products = (props) => {
                   ? "hairMist"
                   : "b1"
               } card`}
-              onClick={() => setIdPerfume(perfume.id)}
+              onClick={() => {
+                setIdPerfume(perfume.id);
+                handleIsPrint(true);
+              }}
             >
               <img src={perfume.image} alt={perfume.title} />
               <div className="product-category">
