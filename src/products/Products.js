@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import PerfumeContext from "../context/ProductContext";
-import "./style.css";
+import "./Products.css";
 
 const Products = (props) => {
   const perfumes = useContext(PerfumeContext);
@@ -17,11 +17,21 @@ const Products = (props) => {
           {perfumes.map((perfume) => (
             <div
               key={perfume.id}
-              className="card"
+              className={`${
+                perfume.category === "Perfume"
+                  ? "perfume"
+                  : perfume.category === "Odor"
+                  ? "odor"
+                  : perfume.category === "Hair Mist"
+                  ? "hairMist"
+                  : "b1"
+              } card`}
               onClick={() => setIdPerfume(perfume.id)}
             >
               <img src={perfume.image} alt={perfume.title} />
-              <h4>{perfume.category} </h4>
+              <div className="product-category">
+                <p>{perfume.category} </p>
+              </div>
               <h4>{perfume.title} </h4>
             </div>
           ))}
