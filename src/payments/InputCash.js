@@ -38,7 +38,7 @@ const InputCash = (props) => {
         onClick={() => addNum(props.values, props.values2)}
         className="itemButton"
         style={{
-          border: "1px solid gray",
+          border: "1px solid #cccbcb",
           width: "108px",
           padding: "0 2px",
           height: "44px",

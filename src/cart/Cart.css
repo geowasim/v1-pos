@@ -47,9 +47,11 @@ hr {
   align-items: center;
   /* border-bottom: 1px dotted whitesmoke; */
   height: 33px;
+  color: #4e4d4d;
 }
 .basketName {
   margin-bottom: 25px;
+  color: ;
 }
 .basketTitle {
   flex: 1;

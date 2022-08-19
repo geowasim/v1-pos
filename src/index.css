@@ -17,3 +17,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+span {
+  color: #4e4d4d;
+}
+
+nav {
+  background-color: #f9f7e3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}

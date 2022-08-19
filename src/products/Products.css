@@ -8,15 +8,15 @@ img {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  border-right: 2px solid whitesmoke;
-  border-top: 2px solid whitesmoke;
+  border-right: 2px solid #cccbcb;
+  border-top: 2px solid #cccbcb;
   overflow: hidden;
 }
 
 .card {
   display: flex;
   width: 100%;
-  border-bottom: 1px solid whitesmoke;
+  border-bottom: 1px solid #cccbcb;
   justify-content: space-between;
   align-items: center;
   padding: 3px 12px;
@@ -37,14 +37,14 @@ img {
 }
 
 .perfume {
-  background-color: rgba(14, 137, 73, 0.2);
+  background-color: #d5ffe933;
 }
 .hairMist {
-  background-color: rgba(127, 29, 29, 0.3);
+  background-color: #e6dbb64d;
 }
 
 .odor {
-  background-color: rgba(145, 129, 169, 0.3);
+  background-color: #f2d0ff4d;
 }
 
 .b1 {

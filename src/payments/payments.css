@@ -27,7 +27,7 @@
 
 .TP {
   border-radius: 5px;
-  color: whitesmoke;
+  color: #4e4d4d;
   padding: 10px;
 }
 
@@ -48,7 +48,7 @@
   margin-top: 15px;
   font-size: 20px;
   font-weight: bold;
-  border: 1px dotted;
+  border: 1px dotted #cccbcb;
   padding: 5px 5px;
   display: flex;
   flex-direction: column;

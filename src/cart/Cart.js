@@ -57,7 +57,13 @@ const Basket = (props) => {
     <div className="basketContainer">
       <div className="basket">
         <h2 className="basketName">السلة</h2>
-        <div>{cartItems.length === 0 && <div>السلة فارغة </div>}</div>
+        <div>
+          {cartItems.length === 0 && (
+            <div>
+              <p>السلة فارغة</p>{" "}
+            </div>
+          )}
+        </div>
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="basketTitle">{item.description}</div>
