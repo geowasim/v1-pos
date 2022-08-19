@@ -127,7 +127,7 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
       <p> نشكركم لاختياركم منتجاتنا </p>
       <p> Thank you for choosing our products</p>
       <p>See you soon!</p>
-      <p> :) </p>
+      <p> 😊</p>
     </div>
   );
 });
