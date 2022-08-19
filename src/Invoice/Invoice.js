@@ -3,7 +3,7 @@ import { ComponentToPrint } from "../ComponentToPrint/ComponentToPrint";
 
 export default function Invoices(props) {
   const { readAmmount } = props;
-  console.log(readAmmount);
+  // console.log(readAmmount);
 
   const [data, setData] = useState(JSON.parse(localStorage.getItem("inv_sn")));
   useEffect(() => {
@@ -28,7 +28,9 @@ export default function Invoices(props) {
             SN/{item.sn}/{" "}
             <span>
               {" "}
-              <button onClick={() => console.log("print")}>Print</button>
+              <button onClick={() => console.log("print")} disabled>
+                Print
+              </button>
             </span>
           </p>
           <hr />
