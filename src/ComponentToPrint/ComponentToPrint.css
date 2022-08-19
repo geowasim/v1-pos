@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
 .fatorah {
-  position: fixed;
+  /* position: fixed; */
   top: 25px;
   right: 25px;
   font-family: "Source Code Pro", "Silkscreen", cursive;
   font-size: 0.7rem;
-  width: 269px;
+  width: 320px;
   padding: 12px 6px;
   text-align: center;
   border: 1px dotted rgba(101, 101, 101, 0.5);
@@ -76,7 +76,7 @@ tbody {
   padding: 13px 16px;
   text-align: center;
   text-transform: uppercase;
-  touch-action: manipulation;
+  /* touch-action: manipulation; */
   transform: translateZ(0);
   transition: filter 0.2s;
   user-select: none;
