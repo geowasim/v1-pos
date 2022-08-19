@@ -19,7 +19,9 @@ function formatDate(date) {
 
 const OrderNumberContext = createContext();
 
-function App() {
+function App(props) {
+  const { handleReadAmmount } = props;
+
   const [item, setItem] = useState(null);
   const [cartItems, setCartItems] = useState([]);
   const [orderNumber, setOrderNumber] = useState(formatDate(new Date()) + 1000);
@@ -119,6 +121,7 @@ function App() {
           onRemove={onRemove}
           resetCartItems={resetCartItems}
           handleData={handleData}
+          handleReadAmmount={handleReadAmmount}
         />
         {/* <Invoice cartItems={cartItems} totalPrice={totalPrice} /> */}
       </div>

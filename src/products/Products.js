@@ -21,6 +21,7 @@ const Products = (props) => {
               onClick={() => setIdPerfume(perfume.id)}
             >
               <img src={perfume.image} alt={perfume.title} />
+              <h4>{perfume.category} </h4>
               <h4>{perfume.title} </h4>
             </div>
           ))}

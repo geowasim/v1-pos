@@ -6,6 +6,8 @@ import "./ComponentToPrint.css";
 export const ComponentToPrint = React.forwardRef((props, ref) => {
   const { cartItems, itemsPrice, method, paidMoney, change } = props;
 
+  // console.log(props);
+
   const [data, setData] = useState(JSON.parse(localStorage.getItem("inv_sn")));
 
   useEffect(() => {
@@ -59,7 +61,9 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
         <table className="table">
           <thead>
             <tr>
+              <td>Category</td>
               <td>Description</td>
+              <td>Vol-مل</td>
               <td>Qty</td>
               <td>Price</td>
               <td>Total</td>
@@ -69,10 +73,12 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
             {cartItems.length !== 0
               ? cartItems.map((cartProduct, key) => (
                   <tr key={key}>
+                    <td>{cartProduct.category} </td>
                     <td>
-                      {cartProduct.title}{" "}
-                      {cartProduct === "Bag" ? "عطر/perfume" : ""}
+                      <span>{cartProduct.description}</span>{" "}
+                      <span>{cartProduct.title}</span>{" "}
                     </td>
+                    <td>{cartProduct.vol} </td>
                     <td>{cartProduct.qty}</td>
                     <td>{cartProduct.price}</td>
                     <td>{cartProduct.qty * cartProduct.price}</td>
@@ -115,6 +121,13 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
           </>
         )}
       </div>
+      <br />
+      <hr />
+      <br />
+      <p> نشكركم لاختياركم منتجاتنا </p>
+      <p> Thank you for choosing our products</p>
+      <p>See you soon!</p>
+      <p> 😊</p>
     </div>
   );
 });

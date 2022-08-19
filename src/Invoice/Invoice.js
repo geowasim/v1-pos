@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
+import { ComponentToPrint } from "../ComponentToPrint/ComponentToPrint";
 
-export default function Invoices() {
+export default function Invoices(props) {
+  const { readAmmount } = props;
+  console.log(readAmmount);
+
   const [data, setData] = useState(JSON.parse(localStorage.getItem("inv_sn")));
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("inv_sn"));
@@ -18,36 +22,18 @@ export default function Invoices() {
   return (
     <>
       {data.map((item) => (
-        <div
-          key={item.sn + 1}
-          style={{ display: "flex", flexDirection: "column" }}
-        >
+        <div key={item.sn + 1} style={{ margin: "10px 25px" }}>
           <hr />
-          <p>SN/{item.sn}/</p>
+          <p>
+            SN/{item.sn}/{" "}
+            <span>
+              {" "}
+              <button onClick={() => console.log("print")}>Print</button>
+            </span>
+          </p>
           <hr />
         </div>
       ))}
     </>
   );
 }
-
-/**
- * || [
-      {
-        sn: 0,
-        items: [],
-        totalWithoutVat: 0,
-        vat: 0,
-        Amount: 0,
-        qty: 0,
-        method: "",
-        paid: 0,
-        change: 0,
-        dateTime: `${
-          new Date().toLocaleTimeString() +
-          " - " +
-          new Date().toLocaleDateString()
-        }`,
-      },
-    ]
- */

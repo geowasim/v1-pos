@@ -1,58 +1,82 @@
 [
   {
     "id": 1,
+    "category": "Perfume",
     "title": "Fiore",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "199",
-    "description": "عطر",
+    "description": "عطر فيوري",
     "vol": "200"
   },
   {
     "id": 2,
+    "category": "Perfume",
     "title": "Oro",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "199",
-    "description": "عطر",
+    "description": "عطر أورو",
     "vol": "200"
   },
   {
     "id": 3,
+    "category": "Perfume",
     "title": "Stella ",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "199",
-    "description": "عطر",
+    "description": "عطر ستيلا",
     "vol": "200"
   },
   {
     "id": 4,
+    "category": "Perfume",
     "title": "Viola",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "199",
-    "description": "عطر",
+    "description": " عطر فيولا",
     "vol": "200"
   },
   {
     "id": 5,
-    "title": "Hair mist",
+    "category": "Hair Mist",
+    "title": " Stell",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "68",
-    "description": "عطر خاص للشعر",
-    "vol": ""
+    "description": "معطر شعر ستيلا",
+    "vol": "30"
   },
   {
     "id": 6,
-    "title": "Odor freshener",
+    "category": "Hair Mist",
+    "title": "Viola ",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "68",
+    "description": "معطر شعر فيولا",
+    "vol": "30"
+  },
+  {
+    "id": 7,
+    "category": "Odor",
+    "title": "Viola Freshener",
     "image": "https://qudella-pos.netlify.app/items.png",
     "price": "49",
-    "description": "معطر جو",
-    "vol": "200"
+    "description": "معطر جو فيولا",
+    "vol": "300"
+  },
+  {
+    "id": 8,
+    "category": "Odor",
+    "title": "Stella reshener",
+    "image": "https://qudella-pos.netlify.app/items.png",
+    "price": "49",
+    "description": "معطر جو ستيلا",
+    "vol": "300"
   },
   {
     "id": "b1",
+    "category": "",
     "title": "Bag",
     "image": "https://qudella-pos.netlify.app/items.png",
     "description": "كيس",
-
     "price": "0"
   }
 ]

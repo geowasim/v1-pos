@@ -5,17 +5,23 @@ import "./Item.css";
 const Item = (props) => {
   const { onAdd } = props;
   const perfumes = useContext(PerfumeContext);
-  const [showItem, setShowItem] = useState(null);
+  const [showItem, setShowItem] = useState(false);
+  const [isCartEmpty, setIsCartEmpty] = useState(false);
 
   useEffect(() => {
     const perObj = perfumes.find((item) => item.id === props.item);
     setShowItem(perObj);
+    // setIsCartEmpty(!isCartEmpty);
   }, [showItem, props, perfumes]);
+
+  const handleIsCartEmpty = () => {
+    setIsCartEmpty(!isCartEmpty);
+  };
 
   return (
     <div className="itemContainer">
       <div className="item">
-        {showItem ? (
+        {!isCartEmpty && showItem ? (
           <div>
             <h1 className="itemName">{showItem.title}</h1>
             <img
@@ -33,7 +39,7 @@ const Item = (props) => {
           </div>
         ) : (
           <div>
-            <h2>المنتج</h2>
+            <h2> اختر منتج</h2>
           </div>
         )}
       </div>

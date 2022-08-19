@@ -49,7 +49,11 @@ hr {
 
 td {
   margin: 0 13px;
-  border: 0.5px dotted rgba(231, 228, 228, 0.2);
+  border: 0.5px dotted rgba(133, 133, 133, 0.2);
+}
+
+tbody {
+  margin-bottom: 15px;
 }
 
 .itemButton1 {

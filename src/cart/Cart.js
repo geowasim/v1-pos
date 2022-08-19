@@ -7,7 +7,14 @@ import MyImage from "../img/QandellaCompanyLogo1.png";
 import Payment from "../payments/Payment";
 
 const Basket = (props) => {
-  const { cartItems, resetCartItems, onAdd, onRemove, handleData } = props;
+  const {
+    cartItems,
+    resetCartItems,
+    onAdd,
+    onRemove,
+    handleData,
+    handleReadAmmount,
+  } = props;
   const [method, setMethod] = useState("Mada");
   const [isCachDone, setIsCachDone] = useState(false);
   const [paidMoney, setPaidMoney] = useState(null);
@@ -53,7 +60,7 @@ const Basket = (props) => {
         <div>{cartItems.length === 0 && <div>السلة فارغة </div>}</div>
         {cartItems.map((item) => (
           <div key={item.id} className="row">
-            <div className="basketTitle">{item.title}</div>
+            <div className="basketTitle">{item.description}</div>
             <div className="basketIND">
               <button onClick={() => onAdd(item)} className="itemButton add">
                 +
