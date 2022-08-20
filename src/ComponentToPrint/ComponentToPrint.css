@@ -7,10 +7,11 @@
   width: 296px;
   padding: 12px 6px;
   text-align: center;
-  width: 100%;
-  font-family: Source Code Pro, sans-serif;
+  width: 226px;
+  font-family: "Source Code Pro", "Silkscreen", cursive;
   border-bottom: 1px dotted rgba(101, 101, 101, 0.5);
   padding: 10px;
+  background: rgba(231, 228, 228, 0.2);
 }
 
 .g1 {
