@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Kufam:ital@1&family=Montserrat:wght@400;700&family=Satisfy&family=Source+Code+Pro:wght@300;400&display=swap");
 
 .fatorah {
   /* position: fixed; */
   top: 25px;
   right: 25px;
-  font-family: monospace, cursive;
-  font-size: 0.7rem;
   width: 296px;
   padding: 12px 6px;
   text-align: center;
@@ -22,7 +19,6 @@
 }
 .preDataNP {
   display: flex;
-  font-size: 0.5rem;
   justify-content: flex-start;
   flex: 1;
 }
@@ -43,7 +39,6 @@ hr {
 }
 
 .casher {
-  font-size: 9px;
 }
 .date {
   margin: 5px 0;
@@ -77,7 +72,6 @@ tbody {
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
-  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 20px;
