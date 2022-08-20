@@ -7,6 +7,7 @@
   width: 296px;
   padding: 12px 6px;
   text-align: center;
+  font-family: Source Code Pro, sans-serif;
   border-bottom: 1px dotted rgba(101, 101, 101, 0.5);
   padding: 10px;
 }
@@ -54,7 +55,7 @@ tr,
 tbody {
   margin: 0 13px;
   border: 0.5px dotted rgb(83, 83, 83);
-  color: rgb(91, 91, 91);
+  color: rgb(0, 0, 0);
 }
 
 tbody {
