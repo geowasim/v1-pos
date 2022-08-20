@@ -36,16 +36,28 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
           <p>Customer: Expo Customer</p>
           <p>Phone: </p>
         </div>
-        <div className="preDataNP preDataNP_1">
-          <p>Flat: </p>
+        <div className="preDataNP ">
+          <p>
+            Flat:
+            <span style={{ color: "transparent" }}>
+              ...................................
+            </span>{" "}
+          </p>
           <p>Building:</p>
         </div>
+        <div className=" preDataNP ">
+          <p>
+            Street:{" "}
+            <span style={{ color: "transparent" }}>
+              ...............................
+            </span>{" "}
+          </p>
+          <p>Block: </p>
+        </div>
       </div>
-      <div className="preDataNP preDataNP_2">
-        <p>Street: </p>
-        <p>Block: </p>
-      </div>
-      <p>*****************************************************************</p>
+      <br />
+      <hr />
+      <br />
       <div className="casher">
         <p style={{ display: "none" }}>Cachier: </p>
         <p>Salesperson: EXPO </p>
@@ -85,15 +97,19 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
               : ""}
           </tbody>
         </table>
-        <p>*****************************************************************</p>
+        <p style={{ marginTop: "15px" }}>
+          ************************************************{" "}
+        </p>
         <p style={{ marginTop: "15px" }}>
           VAT 15% {Math.ceil(itemsPrice * 15) / 100} SAR
         </p>
+        <br />
         <h4 className="px-2">Total without VAT {Math.ceil(itemsPrice)} SAR</h4>
+        <br />
         <h4 className="px-2">
           Total Amount include VAT: {(itemsPrice * 15) / 100 + itemsPrice} SAR
         </h4>
-
+        <br />
         <p>
           {method === "Mada"
             ? "payment by : Mada(مدى)"
@@ -111,17 +127,21 @@ export const ComponentToPrint = React.forwardRef((props, ref) => {
             <p>
               <span>SAR {paidMoney} </span> : المبلغ المستلم
             </p>
-            <p style={{ marginBottom: "10px" }}>
+            <p>
               <span>SAR {change} </span> : المتبقي للعميل
             </p>
           </>
         )}
       </div>
-
-      <p>*****************************************************************</p>
-      <p style={{ marginTop: "10px" }}> نشكركم لاختياركم منتجاتنا </p>
+      <br />
+      <p style={{ marginTop: "15px" }}>
+        ************************************************{" "}
+      </p>{" "}
+      <br />
+      <p> نشكركم لاختياركم منتجاتنا </p>
       <p> Thank you for choosing our products</p>
       <p>See you soon!</p>
+      <p> 😊</p>
     </div>
   );
 });

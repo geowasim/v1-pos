@@ -5,21 +5,29 @@
   /* position: fixed; */
   top: 25px;
   right: 25px;
-  font-family: "Source Code Pro", "Silkscreen", cursive;
+  font-family: "Arial", cursive;
   font-size: 0.7rem;
-  width: 320px;
+  width: 296px;
   padding: 12px 6px;
   text-align: center;
-  border: 1px dotted rgba(101, 101, 101, 0.5);
-  margin: auto;
+  border-bottom: 1px dotted rgba(101, 101, 101, 0.5);
   padding: 10px;
 }
 
+.g1 {
+  display: grid;
+  justify-items: start;
+  justify-content: start;
+  align-items: center;
+}
 .preDataNP {
   display: flex;
   font-size: 0.5rem;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex: 1;
+}
+.preDataNP p {
+  margin-right: 50px;
 }
 
 .preDataNP_1 p:nth-of-type(2) {
@@ -38,7 +46,7 @@ hr {
   font-size: 9px;
 }
 .date {
-  margin-top: 25px;
+  margin: 5px 0;
 }
 
 .tableContainer {
@@ -46,9 +54,12 @@ hr {
   justify-content: space-around;
 }
 
-td {
+td,
+tr,
+tbody {
   margin: 0 13px;
-  border: 0.5px dotted rgba(133, 133, 133, 0.2);
+  border: 0.5px dotted rgb(83, 83, 83);
+  color: rgb(91, 91, 91);
 }
 
 tbody {
