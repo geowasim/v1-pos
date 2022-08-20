@@ -4,13 +4,13 @@
   /* position: fixed; */
   top: 25px;
   right: 25px;
+  font-family: Source Code Pro, monospace, cursive;
+  font-size: 0.7rem;
   width: 296px;
   padding: 12px 6px;
   text-align: center;
-  font-family: "Source Code Pro", "Silkscreen", cursive;
   border-bottom: 1px dotted rgba(101, 101, 101, 0.5);
   padding: 10px;
-  background: rgba(231, 228, 228, 0.2);
 }
 
 .g1 {
@@ -21,6 +21,7 @@
 }
 .preDataNP {
   display: flex;
+  font-size: 0.5rem;
   justify-content: flex-start;
   flex: 1;
 }
@@ -41,6 +42,7 @@ hr {
 }
 
 .casher {
+  font-size: 9px;
 }
 .date {
   margin: 5px 0;
@@ -56,7 +58,7 @@ tr,
 tbody {
   margin: 0 13px;
   border: 0.5px dotted rgb(83, 83, 83);
-  color: rgb(0, 0, 0);
+  color: rgb(91, 91, 91);
 }
 
 tbody {
@@ -74,6 +76,7 @@ tbody {
   cursor: pointer;
   display: inline-block;
   font-family: din-round, sans-serif;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 20px;
